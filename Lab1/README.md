@@ -13,8 +13,8 @@ OpenShift4コンソールやコマンドを使用してクラスターへログ�
 ## 実施手順
 作業は以下の手順どおりに進めます。
 
-1. [OpenShift4クラスターへのログイン](2_ocp4-tour.md)
-2. [コンテナイメージのビルドとデプロイ](3_ocp4-build-deploy.md)
+1. [OpenShift4クラスターへのログイン](1_ocp4-tour.md)
+2. [コンテナイメージのビルドとデプロイ](2_ocp4-build-deploy.md)
 
 ## References
     
