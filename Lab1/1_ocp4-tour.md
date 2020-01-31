@@ -1,10 +1,9 @@
 # 1. OpenShift4クラスターへのログインと動作確認
 各自のOpenShift4クラスターに実際に接続し，クラスター内コンポーネントの動作確認を次の手順で行います。  
-- A) OpenShift4クラスターへのログイン ([2-2](#2-2.-OpenShift4へのログイン))
+- A) OpenShift4クラスターへのログイン 
 
-
-## 2-1. はじめに
-### 2-1-1. OpenShift4のインターフェース
+## 1-1. はじめに
+### 1-1-1. OpenShift4のアクセス方法とは...
 - **ocコマンド** : kubectlをwrapしたOpenShift4を制御するCLIでログイン
   - `oc login <OpenShift_API>`: 任意のユーザーでログイン
   - `oc get pods -n default`: defaultネームスペースのPodを一覧表示
@@ -16,12 +15,12 @@
   - カタログからのミドルウェア，アプリケーションのデプロイ
   - クラスター設定やネームスペース，ロール管理などのAdmin作業
   - etc.
-### 2-1-2. 事前準備
+### 1-1-2. 事前準備
 - ターミナルへのアクセス情報
 - OpenShift4クラスターへのアクセス情報
 
-## 2-2. OpenShift4へのログイン
-### 2-2-1. ocコマンドによるログイン(oc login)
+## 1-2. OpenShift4へのログイン
+### 1-2-1. ocコマンドによるログイン(oc login)
 
 1. ブラウザ(Chrome or Firefox)からターミナル機能へアクセスします。
 
@@ -71,7 +70,7 @@
     >[user2:~] $
     >```
 
-### 2-2-2. ブラウザからOpenShift4コンソールへのログイン
+### 1-2-2. ブラウザからOpenShift4コンソールへのログイン
 ブラウザ(別ウインドウやタブ)からOpenShift4のコンソールにログインします。
 
 >**注意: ワークショップ参加者の方は，必ず自身に割当てられた <OpenShift_Console>，<User_ID>，<User_PW> を使用してください。**  
@@ -90,9 +89,9 @@ Privacy Errorが出た場合は，[Advanced] > [Proceed to oauth-openshift.apps.
 
 ![](images/ocp4-console-login-user-pw.png)
 
-## 2-3. OpenShift4クラスターの動作確認
+## 1-3. OpenShift4クラスターの動作確認
 
-### 2-3-1. K8sワークロード の動作確認 (ocコマンド使用)
+### 1-3-1. K8sワークロード の動作確認 (ocコマンド使用)
 ocコマンドを使用して，K8sワークロードの動作状況を確認してみましょう。  
 
 >クラスターにログインしてない場合は，`$ oc login <OpenShift_API>` でログインします。  
